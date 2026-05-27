@@ -1,0 +1,11 @@
+/* styles.css */
+/* this is a demonstration of External CSS as opposed to Internal or Inline CSS*/
+
+div{
+    color: white;
+    background: black;
+}
+
+p{
+    color: red;
+}

@@ -1,0 +1,32 @@
+.p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.maintitle{
+    text-align: center;
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.recipes{
+    color: aliceblue;
+    display: inline-block;
+    background-color: antiquewhite;
+    padding: 250px;
+    font-size: 32px;
+    margin: 20px;
+}
+
+.recipes.cq{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e9/ChongQing_Noodles%2C_Sucr%C3%A9pic%C3%A9%2C_Paris_001.jpg");
+}
+
+.recipes.lasagna{
+    background-image: url(https://assets.epicurious.com/photos/6508a14155b19af4200459c7/1:1/w_2900,h_2900,c_limit/Sausage-Cheese-Basil-Lasanga_RECIPE.jpg);
+}
+
+.recipetitle{
+    background-color: goldenrod;
+    padding: 30px;
+    text-align: center;
+}
