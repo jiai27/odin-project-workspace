@@ -50,9 +50,14 @@ function playRound(cInput, pInput){
      *      parameters: player and computer input
      *      returns:    0 if computer won, 1 if player won, 2 if it was a tie
      */
-    console.log("--GAME--")
-    console.log("Computer chose: " + cInput)
-    console.log("Player chose: " + pInput)
+    //console.log("--GAME--")
+    //console.log("Computer chose: " + cInput)
+    //console.log("Player chose: " + pInput)
+
+    let title = document.querySelector("h2")
+    let playerChoice = document.createElement("h4")
+    playerChoice.textContent = `(P) ${pInput} VS ${cInput} (C)`
+    title.appendChild(playerChoice)
 
     //matchup result
     if (cInput == pInput){          
@@ -90,9 +95,15 @@ function playRound(cInput, pInput){
             }
         }
     
+    let results = document.createElement("h6")
+    results.textContent = `SCORE:\n
+    PLAYER: ${humanScore}
+    COMPUTER: ${computerScore}`;
 
-    console.log(`Player Score: ${humanScore}`)
-    console.log(`Computer Score: ${computerScore}`)
+    title.appendChild(results)
+
+    //console.log(`Player Score: ${humanScore}`)
+    //console.log(`Computer Score: ${computerScore}`)
 }
 
 let humanScore = 0;
@@ -118,6 +129,44 @@ function playGame(rounds){
     }
 }
 
-playGame(5)
+//playGame(5)     //play the game for 5 rounds
+
+
+//ui section
+const rockButt = document.getElementById("rock")
+const paperButt = document.getElementById("paper")
+const scissorsButt = document.getElementById("scissors")
+
+rockButt.addEventListener('click', (event) =>{
+    event.preventDefault()
+    console.log(event.target)
+    playRound("rock", getComputerChoice())
+    
+    })
+
+paperButt.addEventListener('click', (event) =>{
+    event.preventDefault()
+    console.log(event.target)
+    playRound("paper", getComputerChoice())
+    })
+
+scissorsButt.addEventListener('click', (event) =>{
+    event.preventDefault()
+    console.log(event.target)
+    playRound("scissors", getComputerChoice())
+    })
+
+    /*
+    switch (event.target){
+        case "Rock":
+            console.log("player chose: ROCK")
+            break;
+        case "Paper":
+            console.log("player chose: PAPER")
+            break;
+        case "Scissors":
+            console.log("player chose: SCISSORS")
+            break;
+    }*/
 
 
