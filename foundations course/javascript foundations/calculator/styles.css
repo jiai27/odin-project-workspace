@@ -1,0 +1,75 @@
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200px;
+    padding: 0;
+}
+
+.Calculator{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    background-color: grey;
+    height: 700px;
+    width: 500px;
+    border-radius: 16px;
+
+}
+
+.buttons{
+    display: flex;
+}
+
+.digits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 300px;
+    width: 225px;
+    gap: 10px;
+}
+
+.ops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+
+
+
+.display{
+    margin: 0;
+    width: 350px;
+    height: 50px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+.digOps{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 16px;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-items: center;
+}
