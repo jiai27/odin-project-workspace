@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th id="clothes" colspan="3">Clothes</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th id="trousers" headers="clothes">Trousers</th>
+            <th id="skirts" headers="clothes">Skirts</th>
+            <th id="dresses" headers="clothes">Dresses</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th id="belgium" rowspan="2">Belgium</th>
+        <th id="antwerp" headers="belgium">Antwerp</th>
+        <td headers="belgium antwerp clothes trousers">56</td>
+        <td headers="belgium antwerp clothes skirts">22</td>
+        <td headers="belgium antwerp clothes dresses">43</td>
+    </tr>
+    <tr>
+        <th id="ghent" headers="belgium">Ghent</th>
+        <td headers="belgium ghent clothes trousers">41</td>
+        <td headers="belgium ghent clothes skirts">17</td>
+        <td headers="belgium ghent clothes dresses">35</td>
+    </tr>
+    </tbody>
+    
+</body>
+</html>
