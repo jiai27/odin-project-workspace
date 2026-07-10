@@ -1,0 +1,133 @@
+/*  
+:root{
+    --image-height: cl;
+}*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    position: relative;
+}
+
+.left > img{
+    top: 0;
+    left: 0;
+    /* height: clamp(); */
+    /* width: clamp(500px,50%,700px); */
+    height: 100vh;
+    width: 44vw;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+}
+
+.left > div{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    height: 200px;
+    width: 44vw;
+    background-color: rgb(0 0 0 / 50%)
+}
+
+
+.right{
+    background-color: whitesmoke;
+    justify-content: center
+}
+
+.right > h3{
+    padding: 30px 30px 30px 30px;
+    font-size: 1.2em;
+    height: 1vh;
+    
+}
+
+.right > form{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px 0px 0px;
+    background-color: white;
+    padding: 30px 45px 30px 45px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    height: 300px;
+}
+
+form > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    /* gap: 70px; */
+    column-gap: 70px;
+}
+
+label{
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #333333
+}
+
+form input{
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+    border-color: #E5E7EB;
+    color: #333333;
+    font-size: 18px;
+}
+
+form :user-invalid{
+    border-color: red;
+}
+
+form :focus{
+    border-color: blue;
+    box-shadow: 10px;
+}
+
+
+.right > .sect3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.inner3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.inner3 > button{
+    color: white;
+    background-color: #596D48;
+    border: 0;
+    padding: 10px 25px 10px 25px;
+    border-radius: 4px;
+}
+
+.inner3 .a:active{
+    color: #596D48;
+}

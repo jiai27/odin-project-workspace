@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    <p>This is my page</p>
+
+    <form action="/my-handling-form-page" method="post">
+
+            <fieldset>
+            <legend>Contact</legend>
+
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="user_name" value="eg. John"/>
+            </p>
+
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" id="mail" name="user_email"/>
+            </p>
+
+            <p>
+                <label for="msg">Message: </label>
+                <textarea id="msg" name="user_message">by default this element is filled with text</textarea>
+            </p>
+
+            <p class="button">
+                <button type="submit">Send your message</button>
+            </p>
+
+        </fieldset>
+
+    </form>
+
+  </body>
+</html>

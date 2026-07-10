@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form Project</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="page">
+        <div class="left">       <!--left side of the page-->
+            <img src="images/banner.jpg">
+            <div class="banner">
+                <img src="images/odin-lined.png" height="150px">
+                <h1 class="logo">ODIN</h1>
+            </div>
+        </div>
+
+        <div class="right">       <!--right side of the page-->
+            <h3>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                <br>Sign up <i>now</i> to get started.<br> <br>You <i>know</i> you want to.
+            </h3>
+            <form>
+                <h2>Let's do this!</h2>
+                <div class="formLabels">
+                    <p>
+                        <label for="firstname">FIRST NAME*</label><br>
+                        <input type="text" id="firstname" name="firstname" required placeholder="Eg. Thor">
+                    </p>
+                    <p>
+                        <label for="lastname">LAST NAME*</label><br>
+                        <input type="text" id="lastname" name="lastname" required placeholder="Eg. Odinson">
+                    </p>
+                    <p>
+                        <label for="email">EMAIL*</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">PHONE NUMBER</label><br>
+                        <input type="number" id="phone" name="phone">
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD*</label><br>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+                    <p>
+                        <label for="confirmpassword">CONFIRM PASSWORD*</label><br>
+                        <input type="password" id="confirmpassword" name="confirmpassword" required>
+                    </p>
+
+                </div>
+
+            </form>
+            <div class="sect3">
+                <div class="inner3">
+                    <button class="create" type="submit">Create Account</button>
+                    <h6>Already have an account? <a href="youtube.com">Log in</a></h6>
+                </div>
+            </div>
+
+        </div>
+
+       
+    </div>
+
+    
+</body>
+</html>
