@@ -157,23 +157,53 @@ li > a{
 
 .projects{
     padding: 0px 10px 0px 20px;
+}
+
+.projectlist{
     display: grid;
-    /* grid-template-rows: 70px 1fr 1fr 1fr; */
     grid-template-rows: 70px repeat(autofit, minmax(250px, 1fr));
     grid-template-columns: 1fr 1fr;
+    gap: 36px;
 }
 
 .announcements{
     padding: 0px 20px 0px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 
 .projectcard{
     background-color: white;
     border-radius: 18px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: 12px solid #FFCC00;
 }
+
+.projectcard > h5{
+    font-size: 18px;
+    margin: 0;
+}
+
+.projectcard > p{
+    margin: 5px 30px 50px 0px;
+    font-size: 16px;
+    color: darkgray;
+}
+
+.projectcard > .svgs{
+    display: flex;
+    justify-content: flex-end;
+    /* width: 50px; */
+    height: 50px;
+    gap: 24px;
+}
+
+.svgs > svg{
+    width: 25px;
+}
+
 
 .announcecard{
     display: flex;
