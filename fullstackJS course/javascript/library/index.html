@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="displayspace">Books:
+        <ul>
+            <!-- books get added here from the DOM -->
+        </ul>
+
+        <button command="show-modal" commandfor="addingBook" type="button">New Book</button>
+        <dialog id="addingBook">
+            <h3>Adding Book</h3>
+            <form class="bookform">
+                <label for="booktitle">Title:</label>
+                <input type="text" id="booktitle" name="booktitle" required placeholder="Meditations">
+
+                <label for="bookauthor">Author:</label>
+                <input type="text" id="bookauthor" name="bookauthor" required placeholder="Marcus Aurelius">
+
+                <label for="pagenum">Number of Pages:</label>
+                <input type="number" id="pagenum" name="pagenumber" placeholder="251">
+
+                <label for="readornot">Already Read?</label>
+                <input type="checkbox" id="readornot" name="readornot">
+
+                <button class="submitButton" type="submit">Submit</button>
+            </form>
+            <button commandfor="addingBook" command="close">Close</button>
+
+
+        </dialog>
+
+    </div>
+    
+    
+</body>
+</html>
