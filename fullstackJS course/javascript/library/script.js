@@ -36,6 +36,8 @@ function Book(title, author, pages, read){
     }
 }
 
+//class Book
+
 function addBookToLibrary(bookTitle, bookAuthor, bookPages, bookRead){
     let thisbook = new Book(bookTitle, bookAuthor, bookPages, bookRead)
     myLibrary.push(thisbook)
